@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Personal Website",
+    "description": "A personal website showcasing projects and experiences, featuring a client-side LLM powered by webLLM. The embedded chatbot uses a Gemma-2 2B model with a custom RAG pipeline and is built with TypeScript, React, HTML, and CSS.",
+    "link": "https://github.com/alexandtheoh/alex_oh_website"
+  },
+
+  {
+    "name": "Cafe Order Assistant",
+    "description": "An AI-powered barista agent that converts natural language orders into structured actions, checks inventory, and manages payments. Implemented as a state-machine agent using OpenAI tool calls to manage conversation flow and interactions.",
+    "link": "https://github.com/alexandtheoh/cafe_order_assistant"
+  },
+
+  {
+    "name": "Whatsapp LLM",
+    "description": "A fine-tuned Mistral 7B model trained on 250,000 WhatsApp messages to emulate personal writing style and knowledge. Built using Unsloth and QLoRA for efficient training with a custom conversational template.",
+    "link": "https://github.com/alexandtheoh/whatsapp_llm"
+  }
+]

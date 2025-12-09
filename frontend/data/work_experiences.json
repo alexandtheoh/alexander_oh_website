@@ -1,0 +1,31 @@
+[
+  {
+    "name": "TikTok - Backend SWE (June 25 - Oct 25)",
+    "description": "Engineered backend financial systems for user growth, building a complex approval workflow. Optimized performance by implementing a high-volume batch processing system.",
+    "website": "https://www.tiktok.com/"
+  },
+
+  {
+    "name": "AIDF – Research Intern (Jan 25 - May 25)",
+    "description": "Executed a critical financial data migration, integrating Bloomberg data via a custom Python pipeline that used fuzzy matching and automated SQL generation. Enhanced the backend API with updated data models.",
+    "website": "https://www.aidf.nus.edu.sg/"
+  },
+
+  {
+    "name": "Oneberry – Full Stack Developer (May 24 - Aug 24)",
+    "description": "Led backend development for Singapore's MRT live monitoring system, architecting a real-time Node.js platform using WebSockets and message queues to process data from >10,000 concurrent sensors with secure authentication.",
+    "website": "https://oneberry.com/"
+  },
+
+  {
+    "name": "Maritime Port Authority – Backend SWE (May 23 - Aug 23)",
+    "description": "Developed 8+ new backend features in collaboration with frontend, building RESTful APIs (Node.js/Express) and creating new SQL Server databases to support enhanced functionality like file/image uploads.",
+    "website": "https://www.mpa.gov.sg/home"
+  },
+
+  {
+    "name": "Ministry Of Defence – ASA (Jan 21 - Nov 22)",
+    "description": "Developed VBA scripts to automate the classification and reimbursement process for injured servicemen.",
+    "website": "https://www.mindef.gov.sg/"
+  }
+]
