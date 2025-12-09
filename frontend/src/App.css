@@ -407,6 +407,16 @@ h1 {
   color: white; /* ensures text is visible on the image */
 }
 
+
+@media (max-width: 768px) {
+  .about-image-container {
+    background-size: contain;     /* show full image */
+    background-position: top;
+    background-attachment: scroll; /* disable parallax */
+  }
+}
+
+
 .about-text {
   background: rgba(0, 0, 0, 0); 
   /* background-color: black; */
