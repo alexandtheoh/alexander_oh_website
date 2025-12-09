@@ -398,6 +398,7 @@ h1 {
 
 .about-image-container {
   background: url('/profile_pic.jpeg') 50% 0 repeat-y fixed;
+  background-size: cover;   
   position: relative;
   height: 100vh; /* or whatever height you like */
   width: 100vw;
