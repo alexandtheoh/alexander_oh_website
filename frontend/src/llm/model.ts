@@ -23,8 +23,7 @@ export async function initLLM(onProgress?: (prog: any) => void) {
               return prevProgress
             }
           });
-          
-          console.log("LLM loading:", progress);
+          // console.log("LLM loading:", progress);
         }
       }
     }
@@ -33,7 +32,7 @@ export async function initLLM(onProgress?: (prog: any) => void) {
 
 export async function sendPrompt(messages: webllm.ChatCompletionMessageParam[]) {
   if (!engine) throw new Error("LLM not initialized");
-  console.log(messages)
+  // console.log(messages)
 
   const request: webllm.ChatCompletionRequest = {
     messages,

@@ -589,6 +589,14 @@ h1 {
   transform: translateY(30px); /* start slightly lower */
 }
 
+/* Mobile horizontal padding */
+@media (max-width: 768px) {
+  .experience-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .experience-card.visible {
   opacity: 1;
   transform: translateY(0); /* move to normal position */
@@ -619,13 +627,21 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* Mobile horizontal padding */
+@media (max-width: 768px) {
+  .projects-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* Project cards */
 .project-card {
   border-radius: 16px;
-  background: #111; /* dark card */
+  background: #3d3d3d; /* dark card */
   border: 1px solid #333; /* subtle border */
   padding: 22px 28px;
-  max-width: 750px;
+  max-width: 700px;
   margin: 0 auto;
   cursor: pointer;
 
@@ -649,9 +665,8 @@ h1 {
 
 /* hover */
 .project-card:hover {
-  border-color: #f7bf32;
-  box-shadow: 0 0 20px rgba(247, 191, 50, 0.3);
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
 }
 
 

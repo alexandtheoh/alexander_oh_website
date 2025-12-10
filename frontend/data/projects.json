@@ -2,7 +2,7 @@
   {
     "name": "Personal Website",
     "description": "A personal website showcasing projects and experiences, featuring a client-side LLM powered by webLLM. The embedded chatbot uses a Gemma-2 2B model with a custom RAG pipeline and is built with TypeScript, React, HTML, and CSS.",
-    "link": "https://github.com/alexandtheoh/alex_oh_website"
+    "link": "https://github.com/alexandtheoh/alexander_oh_website"
   },
 
   {

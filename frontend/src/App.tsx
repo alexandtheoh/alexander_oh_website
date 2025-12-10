@@ -127,9 +127,8 @@ export default function Home() {
             </p>
 
             <p>
-              Outside academics, I enjoy working on side projects, exploring new systems design ideas, 
-              and contributing to engineering communities. I'm always excited to meet people who are 
-              interested in infrastructure, backend, or systems programming.
+              Outside academics, I enjoy working on side projects, making espresso, playing sports, and spending time in nature.
+              I also enjoy meeting new people, whether it’s for a good conversation or a good cup of coffee.
             </p>
 
             <a href="/resume.pdf" className="resume-btn" target="_blank">

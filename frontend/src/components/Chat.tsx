@@ -141,7 +141,6 @@ export default function ChatbotUI() {
       setMessages([...messagesToSend, finalAssistantMsg]);
       
     } catch (error) {
-      console.error("Error sending message:", error);
       // Add error message to chat
       const errorMsg: webllm.ChatCompletionMessageParam = {
         role: "assistant",
