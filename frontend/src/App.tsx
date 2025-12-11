@@ -20,29 +20,6 @@ export default function Home() {
     fetchData();
   }, []);
 
-  // animating work experience
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.1 } // trigger when 10% visible
-    );
-
-    // Select all experience cards after render
-    const cards = document.querySelectorAll(".experience-card, .project-card");
-    cards.forEach((card) => observer.observe(card));
-
-    // Cleanup on unmount
-    return () => {
-      cards.forEach((card) => observer.unobserve(card));
-    };
-  }, [workExps]); // <-- dependency ensures it runs after workExps are rendered
-
 
   // load project experiences
   const [projExps, setProjExps] = useState<ProjExp[] | null>(null);
@@ -56,13 +33,35 @@ export default function Home() {
     fetchData();
   }, []);
 
+  // animating cards
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 } // trigger when 10% visible
+    );
+
+    // Select all experience cards after render
+    const cards = document.querySelectorAll(".experience-card, .project-card, .reveal");
+    cards.forEach((card) => observer.observe(card));
+
+    // Cleanup on unmount
+    return () => {
+      cards.forEach((card) => observer.unobserve(card));
+    };
+  }, [workExps, projExps]); // <-- dependency ensures it runs after workExps are rendered
 
   return (
     <div className="page-container">
       {/* INTRO */}
       <section id="about" className="section about-section">
         <div className="about-image-container">
-          <div className="about-text">
+          <div className="about-text reveal">
             <h1>Hey, I’m Alex!</h1>
             <p>
               Ask my chatbot anything you want to know about me!<br />
@@ -142,7 +141,7 @@ export default function Home() {
 
       {/* EXPERIENCES */}
       <section id="experience" className="section experience-section">
-        <h1>Work Experiences</h1>
+        <h1 className="reveal">Work Experiences</h1>
 
         {workExps && workExps.map((exp, index) => (
           <div 
@@ -160,7 +159,7 @@ export default function Home() {
 
       {/* PROJECTS */}
       <section id="projects" className="section projects-section">
-        <h1>Personal Projects</h1>
+        <h1 className="reveal">Personal Projects</h1>
 
         {projExps && projExps.map((proj, index) => (
           <div
@@ -177,7 +176,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <section className="footer">
-        <div className="footer-content">
+        <div className="footer-content reveal">
           <p>© 2025 Alexander Oh</p>
           <div className="footer-links">
             <a href="https://github.com/alexandtheoh" target="_blank">GitHub</a>
