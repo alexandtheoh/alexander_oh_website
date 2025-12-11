@@ -1,12 +1,23 @@
-#root {
+/* #root {
   background-color: rgba(181, 238, 254, 0.48);
   text-align: center;
+} */
+
+body {
+  background-color:rgb(125, 139, 135);
 }
+
+#root {
+  /* background-color: rgba(181, 238, 254, 0.48); overlay */
+  text-align: center;
+}
+
 
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 .logo {
