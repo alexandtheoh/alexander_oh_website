@@ -1,4 +1,5 @@
 import ChatbotPopup from "./components/ChatbotPopup";
+import EditorialCarousel from "./components/SlideShow"
 import './App.css'
 import { useEffect, useState } from "react";
 import { loadWorkExps, loadProjExps } from "./llm/db"
@@ -62,20 +63,29 @@ export default function Home() {
       <section id="about" className="section about-section">
         <div className="about-image-container">
           <div className="about-text reveal">
-            <h1>Hey, I’m Alex!</h1>
+            <h1>Hi, I’m Gillian!</h1>
             <p>
-              Ask my chatbot anything you want to know about me!<br />
-              It might not work on all devices 😢.
+              Ask my chatbot anything you want to know about me!
             </p>
+            <button
+              className="discover-btn"
+              onClick={() =>
+                document.getElementById("about-me-section")?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Discover more ↓
+            </button>
           </div>
         </div>
       </section>
 
       {/* CHATBOT */}
-      <ChatbotPopup />
+      < ChatbotPopup />
 
       {/* ABOUT ME */}
-      <h1>About Me</h1>
+      <h1 id="about-me-section">About Me</h1>
+      < EditorialCarousel />
+
       <section id="about-me" className="aboutme-section">
         
         <div className="aboutme-container">
@@ -84,33 +94,33 @@ export default function Home() {
             <ul className="info-list">
               <li>
                 <strong>Name:</strong>
-                <span>Alexander Oh</span>
+                <span>Gillian Lee</span>
               </li>
 
               <li>
                 <strong>Pronouns:</strong>
-                <span>He/Him</span>
+                <span>She/Her</span>
               </li>
 
               <li>
                 <strong>School:</strong>
-                <span>National University of Singapore</span>
+                <span>Boston University</span>
               </li>
 
               <li>
-                <strong>Major:</strong>
-                <span>Computer Science</span>
+                <strong>Degree:</strong>
+                <span>Data Science Major & Mathematics Minor</span>
               </li>
 
               <li>
                 <strong>Interests:</strong>
-                <span>Tennis, Basketball, Hiking and Pokemon Showdown</span>
+                <span> Scuba Diving (PADI Rescue Diver), Hiking, Indoor Cycling, Modern Literature, Heavy Metal</span>
               </li>
 
               <li className="social-row">
                 <ul className="social-icons">
                   <li><a href="https://github.com/alexandtheoh" target="_blank"><FaGithub /></a></li>
-                  <li><a href="https://www.linkedin.com/in/alexander-oh-zj/" target="_blank"><FaLinkedin /></a></li>
+                  <li><a href="https://www.linkedin.com/in/glslee/" target="_blank"><FaLinkedin /></a></li>
                 </ul>
               </li>
             </ul>
@@ -119,15 +129,9 @@ export default function Home() {
           {/* RIGHT COLUMN */}
           <div className="aboutme-text">
             <p>
-              I'm an undergraduate Computer Science student at the National University of Singapore, 
-              where I focus on networks, distributed systems, and concurrent programming. I love 
-              thinking about how systems behave at scale and how we can build software that is fast, 
-              resilient, and elegant.
-            </p>
-
-            <p>
-              Outside academics, I enjoy working on side projects, making espresso, playing sports, and spending time in nature.
-              I also enjoy meeting new people, whether it’s for a good conversation or a good cup of coffee.
+              From research labs to consulting rooms and product teams, I've learned I'm energized by work that spans disciplines, 
+              moves quickly, and creates tangible impact! I love the rigor of mathematical modeling and technical problem-solving, 
+              but what excites me most is translating meaningful problems into strategic solutions that will drive sustainable growth and positive change.
             </p>
 
             <a href="/resume.pdf" className="resume-btn" target="_blank">
@@ -144,15 +148,17 @@ export default function Home() {
         <h1 className="reveal">Work Experiences</h1>
 
         {workExps && workExps.map((exp, index) => (
-          <div 
-            className="experience-card"
-            style={{ transitionDelay: `${index * 0.1}s` }} // stagger
-            onClick={() => window.open(exp.website, "_blank")}
+          <div className="experience-card"
+            onClick={() => window.open(exp.website)}
             key={index}
           >
-            <h2>{exp.name}</h2>
+            <div className="exp-header">
+              <img src={exp.logo} alt={`${exp.name} logo`} />
+              <h2>{exp.name}</h2>
+            </div>
             <p>{exp.description}</p>
           </div>
+
         ))}
       </section>
 
@@ -165,7 +171,6 @@ export default function Home() {
           <div
             key={index}
             className="project-card"
-            style={{ transitionDelay: `${index * 0.1}s` }}
             onClick={() => window.open(proj.link, "_blank")}
           >
             <h2>{proj.name}</h2>
@@ -177,13 +182,12 @@ export default function Home() {
       {/* FOOTER */}
       <section className="footer">
         <div className="footer-content reveal">
-          <p>© 2025 Alexander Oh</p>
+          <p>© 2025 Gillian Lee</p>
           <div className="footer-links">
             <a href="https://github.com/alexandtheoh" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/alexander-oh-zj/" target="_blank">LinkedIn</a>
             <a href="mailto:alexander.oh@u.nus.edu">Email</a>
           </div>
-          <p className="footer-credit">Designed & built by Alex ✨</p>
         </div>
       </section>
 

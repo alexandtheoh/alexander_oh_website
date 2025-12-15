@@ -193,7 +193,7 @@ export default function ChatbotUI() {
     <div className="chat-container">
       <div className="chat-header">
         <div className="chat-title" style={{ padding: '8px' }} >
-          <h2>Alex AI</h2>
+          <h2>Gillian AI</h2>
           <span className="status" >{renderProgress(progress)}</span>
           <span className="status">{loading || error ? 'Offline': 'Online'}</span>
         </div>

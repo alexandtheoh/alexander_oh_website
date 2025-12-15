@@ -1,10 +1,5 @@
-/* #root {
-  background-color: rgba(181, 238, 254, 0.48);
-  text-align: center;
-} */
-
 body {
-  background-color:rgb(125, 139, 135);
+  background-color:#4D4D4D;
 }
 
 #root {
@@ -58,7 +53,47 @@ h1 {
 
 /* Chat pop up */
 /* Floating chat bubble button */
+
 .chatbot-toggle {
+  position: fixed;
+  bottom: 12px;
+  right: 10px;
+  width: 64px;
+  height: 64px;
+
+  margin-top: 20px;
+  padding: 10px 10px;
+
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: inherit;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.chatbot-toggle:hover {
+  background: #f6f6f6;
+  border-color: #bbb;
+  transform: translateY(-1px);
+}
+
+.chatbot-toggle:focus {
+  outline: none; /* removes the default outline */
+}
+
+
+
+
+/* .chatbot-toggle {
   position: fixed;
   bottom: 12px;
   right: 10px;
@@ -78,8 +113,8 @@ h1 {
   z-index: 1000;
 }
 .chatbot-toggle:focus {
-  outline: none; /* removes the default outline */
-  box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.5); /* optional: custom focus ring */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 204, 51, 0.5);
 }
 
 .chatbot-toggle:hover {
@@ -92,10 +127,10 @@ h1 {
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* Optional pulse animation to attract attention */
+
 .chatbot-toggle.pulse {
   animation: pulse 2s infinite;
-}
+} */
 
 @keyframes pulse {
   0% { transform: translateY(-2px) scale(1); box-shadow: 0 6px 15px rgba(0,0,0,0.2);}
@@ -418,6 +453,34 @@ h1 {
   color: white; /* ensures text is visible on the image */
 }
 
+.discover-btn {
+  margin-top: 10px;
+  padding: 10px 18px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+
+  color: #111;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.discover-btn:hover {
+  background: #f6f6f6;
+  border-color: #bbb;
+  transform: translateY(-1px);
+}
+
+.discover-btn:focus {
+  outline: none; /* removes the default outline */
+}
+
+
 
 @media (max-width: 768px) {
   .about-image-container {
@@ -434,12 +497,13 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   max-width: 50vw;
-  margin-top: 100px;
+  margin-top: 55px;
 }
 
 @media (max-width: 768px) {
   .about-text {
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 0px;
   }
 }
 
@@ -473,6 +537,91 @@ h1 {
 .social-links a:hover {
   text-decoration: underline;
 }
+
+
+/* image carousel */
+.editorial-section {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.carousel-window {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.8s ease;
+}
+
+.carousel-image {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  width: 320px;
+  background: #dedbd6;
+  padding: 28px;
+  border-radius: 6px;
+}
+
+.feature-card .meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.feature-card .cta {
+  margin-top: 20px;
+  background: #3cff3c;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+  position: absolute;
+  bottom: -40px;
+  background: #f2f2f2;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-btn.left {
+  left: 0;
+}
+
+.nav-btn.right {
+  left: 48px;
+}
+
+
+
 
 
 /* about me */
@@ -551,7 +700,7 @@ h1 {
 
 .resume-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 18px;
   background:linear-gradient(135deg, #836900 0%, #f7bf32 100%);
   color: white;
@@ -586,26 +735,32 @@ h1 {
   background-color: #f8f9fb00; /* optional soft background */
 }
 
-.experience-card {
-  border-radius: 16px;
-  background: linear-gradient(135deg, #836900 0%, #f7bf32 100%);
-  padding: 20px 25px;
-  color: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  max-width: 700px;
-  margin: 0 auto;
-  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.25s ease;
-  
-  opacity: 0;               /* start invisible */
-  transform: translateY(30px); /* start slightly lower */
-}
-
 /* Mobile horizontal padding */
 @media (max-width: 768px) {
   .experience-section {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+
+.experience-card {
+  background: #191e20;
+  border-radius: 14px;
+  padding: 24px 28px;
+  max-width: 720px;
+  margin: 0 auto 20px auto;
+
+  /* border: 1px solid #e6e6e6; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+
+  
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.25s ease;
+  transform: scale(0.96);
+  opacity: 0;
 }
 
 .experience-card.visible {
@@ -617,6 +772,23 @@ h1 {
 .experience-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 14px;
+}
+
+.exp-header img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: white;
+  border-radius: 10px;
+  padding: 2px;
 }
 
 

@@ -62,6 +62,7 @@ export interface WorkExp {
   name: string,
   description: string,
   website: string,
+  logo: string
 }
 
 let workExps: WorkExp[]| null = null

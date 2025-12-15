@@ -1,81 +1,87 @@
 {
-  "about-me": "I am a software engineer passionate about building scalable, real-time systems across startups, government, and big tech. I thrive in fast-paced environments and enjoy using creativity to design unique solutions. I have experience in payment systems, real-time data processing, and fine-tuning large language models. I am excited to contribute my expertise to startups in New York.",
+  "about-me": "I am a single daughter. I have 2 dogs Ella a golden retriever and Paris and labradoodle. I love all animals especially elephants. Fun fact, when I was a kid I had a favourite elephant at the Singapore Zoo which I would visit every week.",
 
-  "about-me-2": "Enjoys Tennis, Basketball, Golf, Hiking and Pokemon Showdown. Has 2 other brothers and a Big Swiss Shepherd named Simba.",
+  "about-me-1": "Data Science undergraduate at Boston University with strong experience at the intersection of AI, consulting, and analytics. Experienced in building data pipelines, agentic AI tools, and decision-support systems across consulting, research, and public-sector projects.",
 
-  "education-nus": "Bachelor of Science in Computer Science at the National University of Singapore, starting in August 2023. I represented my residential hall in tennis, track, and frisbee.",
+  "about-me-2": "Interested in AI applications, public policy, consulting, and data-driven product design. Enjoys scuba diving, bouldering, reading, visiting national parks, and animal rescue.",
 
-  "education-acsi": "International Bacculaureate student at Anglo Chinese School Independent. I represented the school for long and triple jump.",
+  "education-bu-summary": "Bachelor of Science in Data Science with a Minor in Pure Mathematics at Boston University, graduating May 2027.",
 
-  "internship-experience-tiktok-summary": "Backend Software Engineer for User Growth (Paid Ads) at TikTok in Singapore starting June 2025 until the end of October 2025",
+  "education-bu-details": "Cumulative GPA 3.70/4.00, IB score 44/45. Honors include Dean’s List AY23/24 and AY24/25.",
 
-  "internship-experience-tiktok-1": "Resolved inefficiencies in financial flows by creating an approval process for payments involving more than thirty branches of conditional logic.",
+  "education-bu-activities-1": "Student Government Financial Affairs – Steering Committee member.",
 
-  "internship-experience-tiktok-2": "Designed and implemented a custom mapping algorithm to display approval progress in the UI.",
+  "education-bu-activities-2": "Operations Chairman at Singapore Students Association.",
 
-  "internship-experience-tiktok-3": "Improved system performance by implementing a batch upload file system with deduplication and error checking validation.",
+  "education-bu-activities-3": "Advanced Sourcing Capstone Project member at BU Venture Capital Group.",
 
-  "internship-experience-tiktok-4": "Built a system capable of handling over 1000 entries at a time, supported by an asynchronous cron job for seamless user experience.",
+  "education-bu-activities-4": "Analyst at BU Consulting Group.",
 
-  "internship-experience-tiktok-5": "Reduced manual data input and saved approximately 4.5 man-days per month by simplifying the batch upload workflow.",
+  "education-bu-external": "Selected participant for McKinsey Future Women’s Leaders (APAC).",
 
-  "internship-experience-tiktok-6-funny-story": "During my interview for Tiktok, after I finished solving the question, my interviewer asked me to explain it to him in chinese. I somehow managed to cobble together some broken translation and got an offer.",
+  "internship-bcg-summary": "Case Team Assistant at Boston Consulting Group in Singapore from May 2025 to August 2025, working on agentic AI tools for private banking personalization.",
 
-  "internship-experience-aidf-summary": "Undergraduate Research Intern at the Asian Institute of Digital Finance (AIDF) from January 2025 to May 2025.",
+  "internship-bcg-1": "Facilitated over 15 focus groups with top-performing private bankers to translate field pain points into product and business logic.",
 
-  "internship-experience-aidf-1": "Completed a database migration to Bloomberg financial data for AIDF.",
+  "internship-bcg-2": "Managed client communications and coordinated feedback across multiple stakeholder groups.",
 
-  "internship-experience-aidf-2": "Used the OpenAI API, fuzzy matching, and pandas to match database variables.",
+  "internship-bcg-3": "Built an automated data pipeline consolidating over 100 survey and bank data fields, reducing dataset size by 50 percent and enabling seamless updates.",
 
-  "internship-experience-aidf-3": "Wrote Python scripts using pandas to generate over 3000 lines of SQL code for the new database.",
+  "internship-bcg-4": "Defined personalization logic for investment content based on historical trading behavior and banker-client relationships.",
 
-  "internship-experience-aidf-4": "Updated and improved the existing Python backend by rewriting SQL queries, adding multilingual input support, and improving error handling.",
+  "internship-bcg-5": "Collaborated cross-functionally on prompt engineering to ensure consistent, high-quality AI outputs.",
 
-  "internship-experience-aidf-5": "Wrote unit tests using Python's unittest framework for new API calls.",
+  "internship-bcg-6": "Authored outreach materials and secured test participation from more than 150 high-net-worth private wealth clients.",
 
-  "internship-experience-oneberry-summary": "Fullstack Developer at Oneberry Technologies from May 2024 to August 2024.",
+  "internship-bcg-7": "Owned and delivered a 29-page client-facing presentation covering product overview, KPIs, and testing roadmap.",
 
-  "internship-experience-oneberry-1": "Developed and deployed a real-time live monitoring website with authentication, enabling Singapore's MRT system to track more than 10,000 sensors concurrently.",
+  "research-h2x-summary": "Computer Vision Research Assistant at the Human-2-Everything Lab, Boston University, from November 2024 to May 2025.",
 
-  "internship-experience-oneberry-2": "Led backend development using Node.js, Socket.io, RabbitMQ, MQTT, DigitalOcean, Strapi, and PM2 for concurrency.",
+  "research-h2x-1": "Designed 17 edge-case autonomous vehicle crash scenarios using CARLA and Roadrunner aligned with NHTSA safety regulations.",
 
-  "internship-experience-oneberry-3": "Collaborated on frontend development using Next.js, TypeScript, CSS, Bootstrap, and Chart.js for data visualization.",
+  "research-h2x-2": "Led testing of autonomous driving models in simulated safety-critical environments.",
 
-  "internship-experience-oneberry-4-funny-story": "The office for Oneberry is situated in Geylang, the redlight district of Singapore. Always a difficult one to explain to people when they asked where I work.",
+  "research-h2x-3": "Improved a real-time navigation application for the visually impaired by integrating object detection, depth sensing, and natural language generation.",
 
-  "internship-experience-mpa-summary": "Backend Software Engineer at the Maritime Port Authority of Singapore from May 2023 to August 2023.",
+  "research-h2x-4": "Achieved 25 percent improvement in contextual speech guidance accuracy.",
 
-  "internship-experience-mpa-1": "Developed and added eight new features to the oneMPA app in collaboration with a frontend engineer.",
+  "internship-oliver-wyman-summary": "Actuarial Consulting Intern at Oliver Wyman in Singapore from June 2024 to September 2024.",
 
-  "internship-experience-mpa-2": "Created new databases to handle file and image uploads and related data storage.",
+  "internship-oliver-wyman-1": "Conducted research and competitor benchmarking to enhance bancassurance offerings for a leading Singapore bank.",
 
-  "internship-experience-mpa-3": "Built RESTful APIs using Node.js, SQL Server, Express.js, and Nodemon.",
+  "internship-oliver-wyman-2": "Evaluated ASEAN market entry strategy for a global reinsurer using opportunity sizing and risk modeling.",
 
-  "personal-project-whatsapp-llm-summary": "Whatsapp LLM: A personal project started in 2025 that fine-tunes a large language model to emulate a person's WhatsApp chat patterns using their message history.",
+  "internship-oliver-wyman-3": "Built a comparative insurance premium dashboard using R and Shiny across U.S. and Asian markets.",
 
-  "personal-project-whatsapp-llm-1": "Fine-tuned a Mistral 7B model using 250,000 WhatsApp messages with a custom training template to emulate personal writing style and knowledge.",
+  "internship-oliver-wyman-4": "Authored monthly client newsletters on sustainability trends and private-equity-backed insurance deals.",
 
-  "personal-project-whatsapp-llm-2": "Used the Unsloth library and QLoRA for efficient parameter tuning.",
+  "internship-oliver-wyman-5": "Created regulatory reference materials on Singapore’s Monetary Authority used across multiple projects.",
 
-  "personal-project-cafe-order-assistant-summary": "An AI-powered barista agent that parses natural language coffee orders into structured decisions, checks inventory, and responds to customers in a friendly way.",
+  "leadership-boston-city-council-summary": "Data Science Product Manager for a SPARK! Practicum Project with the Boston City Council starting September 2025.",
 
-  "personal-project-cafe-order-assistant-1": "A tool based AI agent which utilises the OpenAI api to process natural langange into cafe orders. It is able to handle mutliple orders, charge customers and track",
+  "leadership-boston-city-council-1": "Partnered with City Councilor Weber’s office to analyze busing and school integration policies.",
 
-  "personal-project-cafe-order-assistant-2": "The agent is placed in a state machine and utilises tool calls to transition to/from states and interact with the user.",
+  "leadership-boston-city-council-2": "Built data-driven frameworks to evaluate long-term equity outcomes for Boston Public Schools.",
 
-  "personal-project-alex-website-summary": "A personal website to showcase my experiences and projects. It utilises the webLLM library to host a client side LLM.",
+  "leadership-boston-city-council-3": "Designed and launched an ArcGIS mapping platform for interactive enrollment scenario modeling.",
 
-  "personal-project-alex-website-llm-1": "The chatbot utilises a gemma-2-2b-it-q4f16_1-MLC model alongside with a custom rag pipeline to deliver knowledge about me (alexander).",
+  "leadership-boston-city-council-4": "Identified that 4 percent of bus routes drove approximately $3 million in annual costs without improving diversity or travel times.",
 
-  "personal-project-alex-website-llm-2": "The website is built using TypeScript, React, HTML and CSS.",
+  "leadership-180dc-summary": "Project Manager and Executive Board Advisor at 180 Degrees Consulting, Boston, starting September 2024.",
 
-  "skills-technical": "Technical languages: Go, JavaScript, Python, Java, C, VBA, TypeScript, SQL.",
+  "leadership-180dc-1": "Developed three alternative revenue models to improve financial sustainability for a national education nonprofit.",
 
-  "skills-frameworks": "Frameworks and libraries: Node.js, React.js, Pandas, Hertz, Socket.io, Strapi.",
+  "leadership-180dc-2": "Managed a team of five to evaluate early-stage impact investment opportunities for a $30M fund.",
 
-  "skills-tools": "Tools: Git, Docker, MQTT, RabbitMQ, Postman, Thrift, PM2, Cronjob.",
+  "leadership-180dc-3": "Conducted industry analysis, due diligence, revenue forecasting, and term sheet evaluation.",
 
-  "skills-languages": "Languages: English and Chinese.",
+  "leadership-180dc-4": "Organized weekly speaker sessions, workshops, and mentorship initiatives to strengthen member consulting skills.",
 
-  "interests": "Interests: Tennis, Basketball, Golf, Hiking, and Pokemon Showdown."
+  "skills-programming": "Python, SQL, R, VBA, Rust.",
+
+  "skills-data-tools": "MongoDB, PowerBI, Microsoft Excel, Microsoft PowerPoint.",
+
+  "skills-languages": "English (Fluent), Chinese (Professional Working Proficiency).",
+
+  "interests": "Scuba diving (Rescue Diver), bouldering, reading literature, visiting national parks, and animal rescue."
 }
