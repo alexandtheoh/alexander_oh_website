@@ -146,7 +146,6 @@ export default function Home() {
         {workExps && workExps.map((exp, index) => (
           <div 
             className="experience-card"
-            style={{ transitionDelay: `${index * 0.1}s` }} // stagger
             onClick={() => window.open(exp.website, "_blank")}
             key={index}
           >
@@ -165,7 +164,6 @@ export default function Home() {
           <div
             key={index}
             className="project-card"
-            style={{ transitionDelay: `${index * 0.1}s` }}
             onClick={() => window.open(proj.link, "_blank")}
           >
             <h2>{proj.name}</h2>
@@ -183,7 +181,6 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/alexander-oh-zj/" target="_blank">LinkedIn</a>
             <a href="mailto:alexander.oh@u.nus.edu">Email</a>
           </div>
-          <p className="footer-credit">Designed & built by Alex ✨</p>
         </div>
       </section>
 
