@@ -8,7 +8,7 @@
   {
     "src": "/slideshow/bu.jpg",
     "title": "Education: Boston University",
-    "synopsis": "Class of 2027, Major in Data Science with a minor in Mathematics.",
+    "synopsis": "Class of 2027, Major in Data Science with a Minor in Mathematics.",
     "description": "Noteable classes: Machine Learning, Algorithms, Quant Finance, Molecular Particle Biology, Qantitative Quantam Physics of Particle Acceleration."
   },
   {
@@ -30,15 +30,15 @@
     "description": "I'm passionate about skiing and have been fortunate to experience legendary powder in Niseko, Japan, and explore the majestic alpine terrain of the Swiss and French Alps."
   },
   {
-    "src": "/slideshow/hiking.jpg",
-    "title": "Interest: Hiking",
-    "synopsis": "Finding trails and summits with spontaneous adventure",
-    "description": "In my free time, you'll often find me answering the call of the mountains. I embrace impromptu ascents, sometimes tackling trails with just enthusiasm as my gear."
-  },
-  {
     "src": "/slideshow/dawgs.jpg",
     "title": "Pets: Ella & Paris",
     "synopsis": "Meet my adventurous golden duo",
     "description": "These are my two loyal companions: Ella, the joyful Golden Retriever, and Paris, the playful Labradoodle."
+  },
+  {
+    "src": "/slideshow/hiking.jpg",
+    "title": "Interest: Hiking",
+    "synopsis": "Finding trails and summits with spontaneous adventure",
+    "description": "In my free time, you'll often find me answering the call of the mountains. I embrace impromptu ascents, sometimes tackling trails with just enthusiasm as my gear."
   }
 ]

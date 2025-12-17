@@ -2,12 +2,12 @@
   {
     "name": "Boston University Singapore Student Assoication - Operations Chair",
     "description": "Served as the organizational backbone of the club, ensuring the seamless execution of all events and initiatives that fostered community, promoted Singaporean culture, and supported student welfare.",
-    "link": "https://www.instagram.com/bostonu_ssa/"
+    "src": "/extra_curriculars/ssa.jpg"
   },
 
   {
     "name": "180 Degrees Consulting -  Senior Consultant",
     "description": "Lead pro-bono strategy projects for nonprofits, currently managing a Salesforce database migration. Developed impact investment pitches, delivering data-driven solutions to enhance client operations and social impact.",
-    "link": "https://180dc.org/branches/boston-university-60004"
+    "src": "/extra_curriculars/180.jpg"
   }
 ]

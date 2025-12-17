@@ -95,9 +95,8 @@ export default function Home() {
       < ChatbotPopup />
 
       {/* ABOUT ME */}
-      <section id="about-me-section" className="about-me">
+      <section id="about-me-section" className="about-me reveal">
         <h1>About Me</h1>
-        
         <EditorialCarousel />
       </section>
 
@@ -131,10 +130,18 @@ export default function Home() {
           <div
             key={index}
             className="project-card"
-            onClick={() => window.open(proj.link, "_blank")}
           >
-            <h2>{proj.name}</h2>
-            <p>{proj.description}</p>
+            {/* Background overlay */}
+            <div
+              className="background-hover"
+              style={{ backgroundImage: `url(${proj.src})` }}
+            ></div>
+
+            {/* Content on top */}
+            <div className="content">
+              <h2>{proj.name}</h2>
+              <p>{proj.description}</p>
+            </div>
           </div>
         ))}
       </section>

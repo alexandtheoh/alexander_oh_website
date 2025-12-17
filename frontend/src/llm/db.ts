@@ -2,7 +2,7 @@ import recordsData from '../../data/records.json' with { type: 'json' };
 import embeddingsData from '../../data/embeddings.json' with { type: 'json' };
 import systemPromptData from '../../data/system_prompt.json' with { type: 'json' };
 import expsData from '../../data/work_experiences.json' with { type: 'json' };
-import projsData from '../../data/projects.json' with { type: 'json' };
+import projsData from '../../data/extra_curriculars.json' with { type: 'json' };
 import slideShowData from '../../data/slideshow.json' with { type: 'json' };
 
 // load records
@@ -80,7 +80,7 @@ export async function loadWorkExps(): Promise<WorkExp[]> {
 export interface ProjExp {
   name: string,
   description: string,
-  link: string,
+  src: string,
 }
 
 let projExps: ProjExp[] | null = null
