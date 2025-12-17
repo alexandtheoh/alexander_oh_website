@@ -10,6 +10,7 @@ export default defineConfig({
     fs: {
       strict: false, // allow serving files from public
     },
+    // ALWAYS REMOVE https BEFORE DEPLOYMENT
     https: {
       key: fs.readFileSync("./cert/key.pem"),
       cert: fs.readFileSync("./cert/cert.pem")

@@ -3,6 +3,7 @@ import embeddingsData from '../../data/embeddings.json' with { type: 'json' };
 import systemPromptData from '../../data/system_prompt.json' with { type: 'json' };
 import expsData from '../../data/work_experiences.json' with { type: 'json' };
 import projsData from '../../data/projects.json' with { type: 'json' };
+import slideShowData from '../../data/slideshow.json' with { type: 'json' };
 
 // load records
 interface Record {
@@ -82,7 +83,7 @@ export interface ProjExp {
   link: string,
 }
 
-let projExps: ProjExp[]| null = null
+let projExps: ProjExp[] | null = null
 
 export async function loadProjExps(): Promise<ProjExp[]> {
   if (projExps) return projExps
@@ -90,4 +91,22 @@ export async function loadProjExps(): Promise<ProjExp[]> {
   projExps = projsData as ProjExp[];
 
   return projExps
+}
+
+// load slideshow
+export interface SlideShowItem {
+  src: string;
+  title: string;
+  synopsis: string;
+  description: string;
+}
+
+let slideShowItems: SlideShowItem[] | null = null
+
+export async function loadSlideShowItems(): Promise<SlideShowItem[]> {
+  if (slideShowItems) return slideShowItems
+  
+  slideShowItems = slideShowData as SlideShowItem[];
+
+  return slideShowItems
 }
