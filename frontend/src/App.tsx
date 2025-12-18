@@ -2,8 +2,8 @@ import ChatbotPopup from "./components/ChatbotPopup";
 import EditorialCarousel from "./components/SlideShow"
 import './App.css'
 import { useEffect, useState } from "react";
-import { loadWorkExps, loadProjExps } from "./llm/db"
-import type { WorkExp, ProjExp } from "./llm/db"
+import { loadWorkExps, loadProjExps, loadPersonalLinks } from "./llm/db"
+import type { WorkExp, ProjExp, PersonalLinks } from "./llm/db"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 
@@ -11,28 +11,27 @@ export default function Home() {
 
   // load work experiences
   const [workExps, setWorkExps] = useState<WorkExp[] | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const exps = await loadWorkExps()
-      setWorkExps(exps)
-    };
-
-    fetchData();
-  }, []);
-
-
-  // load project experiences
   const [projExps, setProjExps] = useState<ProjExp[] | null>(null);
+  const [personalLinks, setPersonalLinks] = useState<PersonalLinks | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const exps = await loadProjExps()
-      setProjExps(exps)
+      // load work experiences
+      const wExps = await loadWorkExps()
+      setWorkExps(wExps)
+
+      // load project experiences
+      const pExps = await loadProjExps()
+      setProjExps(pExps)
+
+      // load personal links
+      const pLinks = await loadPersonalLinks()
+      setPersonalLinks(pLinks)
     };
 
     fetchData();
   }, []);
+
 
   // animating cards
   useEffect(() => {
@@ -70,7 +69,7 @@ export default function Home() {
 
             <div className="button-container">
               {/* resume button */}
-              <a href="/resume.pdf" className="discover-btn" target="_blank">Download Resume</a>
+              <a href={personalLinks?.resume} className="discover-btn" target="_blank">Download Resume</a>
 
               {/* discover more button */}
               <a 
@@ -151,9 +150,9 @@ export default function Home() {
         <div className="footer-content reveal">
           <p>© 2025 Gillian Lee</p>
           <div className="footer-links">
-            <a href="https://github.com/alexandtheoh" target="_blank"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/glslee/" target="_blank"><FaLinkedin /></a>
-            <a href="mailto:gillianlslee@gmail.com" target="_blank"><FaEnvelope /></a>
+            <a href={personalLinks?.github} target="_blank"><FaGithub /></a>
+            <a href={personalLinks?.linkedin} target="_blank"><FaLinkedin /></a>
+            <a href={`mailto:${personalLinks?.email}`} target="_blank"><FaEnvelope /></a>
           </div>
         </div>
       </section>

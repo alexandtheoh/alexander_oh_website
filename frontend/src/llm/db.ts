@@ -4,6 +4,7 @@ import systemPromptData from '../../data/system_prompt.json' with { type: 'json'
 import expsData from '../../data/work_experiences.json' with { type: 'json' };
 import projsData from '../../data/extra_curriculars.json' with { type: 'json' };
 import slideShowData from '../../data/slideshow.json' with { type: 'json' };
+import personalLinksData from '../../data/personal_links.json' with { type: 'json' };
 
 // load records
 interface Record {
@@ -109,4 +110,23 @@ export async function loadSlideShowItems(): Promise<SlideShowItem[]> {
   slideShowItems = slideShowData as SlideShowItem[];
 
   return slideShowItems
+}
+
+
+// load personal links
+export interface PersonalLinks {
+  resume: string;
+  linkedin: string;
+  github: string;
+  email: string;
+}
+
+let personalLinks: PersonalLinks | null = null
+
+export async function loadPersonalLinks(): Promise<PersonalLinks> {
+  if (personalLinks) return personalLinks
+  
+  personalLinks = personalLinksData as PersonalLinks;
+
+  return personalLinks
 }
