@@ -48,7 +48,7 @@ interface SystemPrompt {
   [id: string]: string,
 }
 
-let SYSTEM_PROMPT: SystemPrompt| null = null
+let SYSTEM_PROMPT: SystemPrompt | null = null
 
 export async function loadSystemPrompt(): Promise<string> {
   if (SYSTEM_PROMPT) return SYSTEM_PROMPT['SYSTEM_PROMPT']

@@ -77,9 +77,17 @@ export default function Home() {
                 className="discover-btn"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById("about-me-section")?.scrollIntoView({ 
-                    behavior: "smooth" 
-                  });
+                  const element = document.getElementById("about-me-section");
+                  if (element) {
+                    const offset = -40; // Adjust this value (negative = scroll less)
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset + offset;
+                    
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: "smooth"
+                    });
+                  }
                 }}
               >
                 Discover more ↓
