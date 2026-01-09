@@ -62,9 +62,9 @@ export default function Home() {
       <section id="about" className="section about-section">
         <div className="about-image-container">
           <div className="about-text reveal">
-            <h1>Hi, I’m Gillian!</h1>
+            <h1>Hi, I’m Alex!</h1>
             <p>
-              Ask my chatbot anything you want to know about me!
+              Feel free to have a conversation with my custom RAG chatbot!
             </p>
 
             <div className="button-container">
@@ -131,18 +131,20 @@ export default function Home() {
 
       {/* PROJECTS */}
       <section id="projects" className="section projects-section">
-        <h1 className="reveal">Extra Curriculars</h1>
+        <h1 className="reveal">Projects</h1>
 
         {projExps && projExps.map((proj, index) => (
           <div
             key={index}
             className="project-card"
+            onClick={() => window.open(proj.link, "_blank")}
+            style={{ cursor: "pointer" }}
           >
-            {/* Background overlay */}
-            <div
+            {/* Background overlay (disabled for now) */}
+            {/* <div
               className="background-hover"
               style={{ backgroundImage: `url(${proj.src})` }}
-            ></div>
+            ></div> */}
 
             {/* Content on top */}
             <div className="content">
@@ -156,7 +158,7 @@ export default function Home() {
       {/* FOOTER */}
       <section className="footer">
         <div className="footer-content reveal">
-          <p>© 2025 Gillian Lee</p>
+          <p>© 2025 Alexander Oh</p>
           <div className="footer-links">
             <a href={personalLinks?.github} target="_blank"><FaGithub /></a>
             <a href={personalLinks?.linkedin} target="_blank"><FaLinkedin /></a>

@@ -81,7 +81,7 @@ export async function loadWorkExps(): Promise<WorkExp[]> {
 export interface ProjExp {
   name: string,
   description: string,
-  src: string,
+  link: string,
 }
 
 let projExps: ProjExp[] | null = null

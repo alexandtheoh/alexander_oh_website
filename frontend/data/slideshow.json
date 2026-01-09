@@ -1,44 +1,38 @@
 [
   {
-    "src": "/slideshow/gillian.jpg",
-    "title": "Gillian Lee",
-    "synopsis": "Student, Consultant, Woman",
-    "description": "**Pronouns:** She/Her\n\n**Skills:**\n- PADI rescue diver\n- Backcountry skier\n- Synchronized swimming\n\n**High School:** Saint Joseph's Institution International"
+    "src": "/slideshow/alex.jpg",
+    "title": "Name: Alex Oh",
+    "synopsis": "Affectionately known as 'Oh No'",
+    "description": "**Pronouns:** He/Him\n\n**Skills:**\n- Tennis\n- Basketball\n- Golf\n\n**High School:** Anglo Chinese School Independent"
   },
   {
-    "src": "/slideshow/bu.jpg",
-    "title": "Education: Boston University",
-    "synopsis": "Class of 2027, Major in Data Science with a Minor in Mathematics.",
-    "description": "Noteable classes: Machine Learning, Algorithms, Quant Finance, Molecular Particle Biology, Qantitative Quantam Physics of Particle Acceleration."
+    "src": "/slideshow/nus.jpg",
+    "title": "Education: National University of Singapore",
+    "synopsis": "Class of 2027, Major in Computer Science",
+    "description": "Noteable classes: Algorithims, Data Structures, Machine Learning, Databases, Internet Architecture"
   },
   {
-    "src": "/slideshow/180.jpg",
-    "title": "Clubs: 180 Consulting",
-    "synopsis": "Senior Consultant at 180 Degress Consulting Boston University",
-    "description": "Worked on BU City project, Gaza relocation, Manhattan Project."
-  },
-  {
-    "src": "/slideshow/ssa.jpg",
-    "title": "Societies: Singapore Students Association",
-    "synopsis": "Operations Head",
-    "description": "Helped Amos Yee secure court funding. Made jokes about WW2. Embraced colonialism."
-  },
-  {
-    "src": "/slideshow/skiing.jpg",
-    "title": "Interest: Skiing",
-    "synopsis": "Chasing powder across the world's best slopes",
-    "description": "I'm passionate about skiing and have been fortunate to experience legendary powder in Niseko, Japan, and explore the majestic alpine terrain of the Swiss and French Alps."
+    "src": "/slideshow/tennis.jpg",
+    "title": "Interest: Tennis",
+    "synopsis": "Playing Tennis for NUS Raffles",
+    "description": "I really enjoy playing tennis. I find it an extremely effective de-stresser and I love playing with my friends or family."
   },
   {
     "src": "/slideshow/dawgs.jpg",
-    "title": "Pets: Ella & Paris",
-    "synopsis": "Meet my adventurous golden duo",
-    "description": "These are my two loyal companions: Ella, the joyful Golden Retriever, and Paris, the playful Labradoodle."
+    "title": "Pet: Simba",
+    "synopsis": "My Swiss Shepherd buddy",
+    "description": "Simba has been with my family since 2015. He weighs 55 kilos or a 120 pounds!"
   },
   {
     "src": "/slideshow/hiking.jpg",
     "title": "Interest: Hiking",
-    "synopsis": "Finding trails and summits with spontaneous adventure",
-    "description": "In my free time, you'll often find me answering the call of the mountains. I embrace impromptu ascents, sometimes tackling trails with just enthusiasm as my gear."
+    "synopsis": "I love answering the call to the outdoors",
+    "description": "Finding rare and impromptu hikes is always my priority when travelling. The best time I've had has definitely been Santa Fe."
+  },
+  {
+    "src": "/slideshow/basketball.jpg",
+    "title": "Interest: Basketball",
+    "synopsis": "Jumping with a basketball",
+    "description": "I've self taught basketball since 14. I'm a fan of the NBA and I love the Bucks."
   }
 ]
