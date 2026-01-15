@@ -1,5 +1,12 @@
 [
   {
+    "name": "Tetrix - Software Engineer (Jan 2026 - Current)",
+    "description": "Just an intern working on private market analysis in New York City.",
+    "website": "https://www.tetrix.co/",
+    "logo": "/companies/tetrix.jpg"
+  },
+
+  {
     "name": "TikTok - Backend SWE (June 25 - Oct 25)",
     "description": "Engineered backend financial systems for user growth, building a complex approval workflow. Optimized performance by implementing a high-volume batch processing system.",
     "website": "https://www.tiktok.com/",
