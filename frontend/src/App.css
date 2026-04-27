@@ -1,10 +1,9 @@
-html, body {
-  background-color:#bab8b8;
+html, body, #root {
+  background-color: #242424;
   overflow-x: hidden;
 }
 
 #root {
-  /* background-color: rgba(181, 238, 254, 0.48); overlay */
   text-align: center;
 }
 
@@ -452,7 +451,7 @@ h1 {
 
 @media (max-width: 768px) {
   .about-image-container {
-    background-size: None;     /* show full image */
+    background-size: cover;
     background-position: top;
     background-attachment: scroll; /* disable parallax */
   }

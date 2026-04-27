@@ -6,12 +6,11 @@ import '../App.css'
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import * as webllm from "@mlc-ai/web-llm";
-
+import type { ChatCompletionMessageParam } from "@mlc-ai/web-llm/lib/openai_api_protocols/chat_completion";
 
 export default function ChatbotUI() {
   // for messages
-  const [messages, setMessages] = useState<webllm.ChatCompletionMessageParam[]>([]);
+  const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([]);
   const [input, setInput] = useState("");
   const [messageCount, setMessageCount] = useState(0)
   const [systemPrompt, setSystemPrompt] = useState('')
@@ -53,7 +52,7 @@ export default function ChatbotUI() {
         setError(errorStr);
         
         // load error in chat
-        const errorMsg: webllm.ChatCompletionMessageParam = {
+        const errorMsg: ChatCompletionMessageParam = {
           role: "assistant",
           content: "Error loading model. Your device might not be compatible with WebGPU."
         }
@@ -77,19 +76,19 @@ export default function ChatbotUI() {
     const context = await getTopKRecords(input, 8, 0)
 
     // create user message
-    const userMsg: webllm.ChatCompletionMessageParam = {
+    const userMsg: ChatCompletionMessageParam = {
       role: "user",
       content: input,
     };
 
-    let messagesToSend: webllm.ChatCompletionMessageParam[] = [...messages];
+    let messagesToSend: ChatCompletionMessageParam[] = [...messages];
 
     // only add system prompt if first message, combine system and context message as one
     if (messageCount === 0) {
       const systemPrompt = await loadSystemPrompt();
       setSystemPrompt(systemPrompt);
 
-      const systemPromptMsg: webllm.ChatCompletionMessageParam = {
+      const systemPromptMsg: ChatCompletionMessageParam = {
         role: "system",
         content: `${systemPrompt}
     Current Date: ${new Date().toISOString()}
@@ -124,7 +123,7 @@ export default function ChatbotUI() {
         fullResponse += chunkContent;
         
         // Create temporary assistant message
-        const tempAssistantMsg: webllm.ChatCompletionMessageParam = {
+        const tempAssistantMsg: ChatCompletionMessageParam = {
           role: "assistant",
           content: fullResponse,
         };
@@ -134,7 +133,7 @@ export default function ChatbotUI() {
       }
       
       // Final update with complete message
-      const finalAssistantMsg: webllm.ChatCompletionMessageParam = {
+      const finalAssistantMsg: ChatCompletionMessageParam = {
         role: "assistant",
         content: fullResponse,
       };
@@ -142,7 +141,7 @@ export default function ChatbotUI() {
       
     } catch (error) {
       // Add error message to chat
-      const errorMsg: webllm.ChatCompletionMessageParam = {
+      const errorMsg: ChatCompletionMessageParam = {
         role: "assistant",
         content: "Sorry, an error occurred while processing your message.",
       };
@@ -165,7 +164,7 @@ export default function ChatbotUI() {
   }, [messages]);
 
   // helpers
-  const renderContent = (msg: webllm.ChatCompletionMessageParam) => {
+  const renderContent = (msg: ChatCompletionMessageParam) => {
     let renderedContent: string = ""
     if (!msg.content) renderedContent = "";
     if (typeof msg.content === "string") renderedContent = msg.content;
