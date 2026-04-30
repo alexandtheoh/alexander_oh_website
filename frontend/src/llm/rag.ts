@@ -1,6 +1,7 @@
 import { pipeline, FeatureExtractionPipeline } from "@huggingface/transformers";
 import { loadRecords, loadEmbeddings } from "./db"
 import { MinHeap } from "./min_heap"
+import type { ChatCompletionMessageParam } from "@mlc-ai/web-llm/lib/openai_api_protocols/chat_completion";
 
 let embedder: FeatureExtractionPipeline | null = null
 
@@ -104,7 +105,29 @@ export async function getTopKRecords(query: string, K: number, threshold: number
 
   // translate into json for llm
   const contextForLLM = JSON.stringify(topKContext, null, 2);
-  
+
   return contextForLLM
+}
+
+// Builds an enhanced query by prepending recent conversation context before embedding,
+// so cosine similarity captures what the user is actually talking about across turns.
+export async function getContextAwareTopKRecords(
+  messages: ChatCompletionMessageParam[],
+  currentQuery: string,
+  K: number,
+  threshold: number,
+  contextWindow: number = 4
+): Promise<string> {
+  const nonSystem = messages.filter((m) => m.role !== "system");
+  const recent = nonSystem.slice(-contextWindow);
+
+  const contextStr = recent
+    .map((m) => (typeof m.content === "string" ? m.content : ""))
+    .filter(Boolean)
+    .join(" ");
+
+  const enhancedQuery = contextStr ? `${contextStr} ${currentQuery}` : currentQuery;
+
+  return getTopKRecords(enhancedQuery, K, threshold);
 }
 

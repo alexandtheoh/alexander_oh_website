@@ -1,81 +1,101 @@
 {
-  "about-me": "I am a software engineer passionate about building scalable, real-time systems across startups, government, and big tech. I thrive in fast-paced environments and enjoy using creativity to design unique solutions. I have experience in payment systems, real-time data processing, and fine-tuning large language models. I am excited to contribute my expertise to startups in New York.",
+  "about-me": "I am a software engineer passionate about building scalable, real-time systems across startups, government, and big tech. I thrive in fast-paced environments and enjoy using creativity to design unique solutions. I have experience in payment systems, real-time data processing, financial data systems, and fine-tuning large language models. I am excited to contribute my expertise to startups in New York.",
 
   "about-me-2": "Enjoys Tennis, Basketball, Golf, Hiking and Pokemon Showdown. Has 2 other brothers and a Big Swiss Shepherd named Simba.",
 
-  "education-nus": "Bachelor of Science in Computer Science at the National University of Singapore, starting in August 2023. I represented my residential hall in tennis, track, and frisbee.",
+  "education-nus": "Bachelor of Science in Computer Science at the National University of Singapore, starting in August 2023, expected to graduate in May 2027. Cumulative GPA of 4.00 out of 5.00. I represented my residential hall (Raffles Hall) in tennis, track, and frisbee.",
 
-  "education-acsi": "International Bacculaureate student at Anglo Chinese School Independent. I represented the school for long and triple jump.",
+  "education-acsi": "International Baccalaureate student at Anglo Chinese School Independent. I represented the school for long and triple jump.",
 
-  "internship-experience-tiktok-summary": "Backend Software Engineer for User Growth (Paid Ads) at TikTok in Singapore starting June 2025 until the end of October 2025",
+  "internship-experience-tetrix-summary": "Backend Software Engineer at Tetrix, a private markets fintech startup based in New York, United States, starting January 2026 and currently ongoing. Tetrix is my most recent and current role.",
 
-  "internship-experience-tiktok-1": "Resolved inefficiencies in financial flows by creating an approval process for payments involving more than thirty branches of conditional logic.",
+  "internship-experience-tetrix-1": "Led the development of a data extensibility framework that supports over 15 private market data models, enabling dynamic custom fields to be added across fund portfolios, cap tables, and investor datasets.",
 
-  "internship-experience-tiktok-2": "Designed and implemented a custom mapping algorithm to display approval progress in the UI.",
+  "internship-experience-tetrix-2": "Designed a scalable custom field system that propagated changes consistently across more than 6 microservices, reducing schema change overhead by approximately 80% while maintaining consistency across analytics and frontend systems.",
 
-  "internship-experience-tiktok-3": "Improved system performance by implementing a batch upload file system with deduplication and error checking validation.",
+  "internship-experience-tetrix-3": "Optimized time series computations by leveraging NumPy vectorization to process over 100,000 rows of financial data, achieving roughly 5 to 10 times performance improvements over previous implementations.",
 
-  "internship-experience-tiktok-4": "Built a system capable of handling over 1000 entries at a time, supported by an asynchronous cron job for seamless user experience.",
+  "internship-experience-tetrix-4": "Implemented custom formula support with DAG-based (Directed Acyclic Graph) dependency resolution using topological sorting. This eliminated circular dependencies and ensured correct evaluation order across complex interdependent financial metrics.",
 
-  "internship-experience-tiktok-5": "Reduced manual data input and saved approximately 4.5 man-days per month by simplifying the batch upload workflow.",
+  "internship-experience-tetrix-5": "Collaborated with the intelligent document extraction team to process over 50,000 documents. Built an Excel traceability system that maps LLM outputs to exact source coordinates with 100% accuracy, significantly improving auditability and trust in AI-generated results.",
 
-  "internship-experience-tiktok-6-funny-story": "During my interview for Tiktok, after I finished solving the question, my interviewer asked me to explain it to him in chinese. I somehow managed to cobble together some broken translation and got an offer.",
+  "internship-experience-tetrix-6": "Tetrix is based in New York. This is Alexander's first role in the United States and his first full-time software engineering position.",
 
-  "internship-experience-aidf-summary": "Undergraduate Research Intern at the Asian Institute of Digital Finance (AIDF) from January 2025 to May 2025.",
+  "internship-experience-tiktok-summary": "Backend Software Engineer for User Growth (Paid Ads) at TikTok in Singapore from June 2025 to November 2025.",
 
-  "internship-experience-aidf-1": "Completed a database migration to Bloomberg financial data for AIDF.",
+  "internship-experience-tiktok-1": "Streamlined payment processes for TikTok's ads platform using Go as the primary language, with Thrift and Kitex for RPC communication and Hertz for HTTP handling.",
 
-  "internship-experience-aidf-2": "Used the OpenAI API, fuzzy matching, and pandas to match database variables.",
+  "internship-experience-tiktok-2": "Resolved inefficiencies in financial flows by creating an approval process for payments involving more than 30 branches of conditional logic.",
 
-  "internship-experience-aidf-3": "Wrote Python scripts using pandas to generate over 3000 lines of SQL code for the new database.",
+  "internship-experience-tiktok-3": "Designed and implemented a custom mapping algorithm to display approval progress visually in the UI, making complex payment state transitions interpretable for users.",
 
-  "internship-experience-aidf-4": "Updated and improved the existing Python backend by rewriting SQL queries, adding multilingual input support, and improving error handling.",
+  "internship-experience-tiktok-4": "Improved system performance by implementing a batch upload file system with deduplication and error checking validation.",
 
-  "internship-experience-aidf-5": "Wrote unit tests using Python's unittest framework for new API calls.",
+  "internship-experience-tiktok-5": "Built the batch upload system to handle over 1000 entries at a time, supported by an asynchronous cron job to maintain a seamless user experience without blocking operations.",
 
-  "internship-experience-oneberry-summary": "Fullstack Developer at Oneberry Technologies from May 2024 to August 2024.",
+  "internship-experience-tiktok-6": "Reduced manual data input and saved approximately 4.5 man-days per month by simplifying the batch upload workflow.",
 
-  "internship-experience-oneberry-1": "Developed and deployed a real-time live monitoring website with authentication, enabling Singapore's MRT system to track more than 10,000 sensors concurrently.",
+  "internship-experience-tiktok-7-funny-story": "During my interview for TikTok, after I finished solving the coding question, my interviewer asked me to explain my solution in Chinese. I somehow managed to cobble together a broken translation and still got an offer.",
 
-  "internship-experience-oneberry-2": "Led backend development using Node.js, Socket.io, RabbitMQ, MQTT, DigitalOcean, Strapi, and PM2 for concurrency.",
+  "internship-experience-aidf-summary": "Undergraduate Research Intern at the Asian Institute of Digital Finance (AIDF), a fintech startup, from January 2025 to May 2025 in Singapore.",
 
-  "internship-experience-oneberry-3": "Collaborated on frontend development using Next.js, TypeScript, CSS, Bootstrap, and Chart.js for data visualization.",
+  "internship-experience-aidf-1": "Completed a full database migration to Bloomberg financial data for AIDF, replacing the existing data source across the system.",
 
-  "internship-experience-oneberry-4-funny-story": "The office for Oneberry is situated in Geylang, the redlight district of Singapore. Always a difficult one to explain to people when they asked where I work.",
+  "internship-experience-aidf-2": "Used the OpenAI API, fuzzy matching techniques, and pandas to accurately match and align database variables between old and new schemas.",
 
-  "internship-experience-mpa-summary": "Backend Software Engineer at the Maritime Port Authority of Singapore from May 2023 to August 2023.",
+  "internship-experience-aidf-3": "Wrote Python scripts using pandas to iteratively generate over 3,000 lines of SQL code for the new Bloomberg database.",
+
+  "internship-experience-aidf-4": "Updated and improved the existing Python backend by rewriting SQL queries to target the new database, adding multilingual input support, and improving error handling throughout.",
+
+  "internship-experience-aidf-5": "Wrote unit tests using Python's unittest framework for new API calls to ensure correctness and reliability of the updated backend.",
+
+  "internship-experience-oneberry-summary": "Fullstack Developer at Oneberry Technologies in Singapore from May 2024 to August 2024.",
+
+  "internship-experience-oneberry-1": "Developed and deployed a real-time live monitoring website with authentication, enabling Singapore's MRT rail system to track more than 10,000 IoT sensors concurrently.",
+
+  "internship-experience-oneberry-2": "Led backend development using Node.js, Socket.io, RabbitMQ, MQTT, DigitalOcean, Strapi, and PM2 for concurrency and message brokering.",
+
+  "internship-experience-oneberry-3": "Collaborated on frontend development using Next.js, TypeScript, CSS, Bootstrap, and Chart.js for real-time data visualization.",
+
+  "internship-experience-oneberry-4-funny-story": "The Oneberry office was situated in Geylang, the red-light district of Singapore — always a tricky one to explain when people asked where I worked.",
+
+  "internship-experience-mpa-summary": "Backend Software Engineer at the Maritime Port Authority (MPA) of Singapore from May 2023 to August 2023.",
 
   "internship-experience-mpa-1": "Developed and added eight new features to the oneMPA app in collaboration with a frontend engineer.",
 
-  "internship-experience-mpa-2": "Created new databases to handle file and image uploads and related data storage.",
+  "internship-experience-mpa-2": "Created new databases to handle file and image uploads and manage related data storage.",
 
   "internship-experience-mpa-3": "Built RESTful APIs using Node.js, SQL Server, Express.js, and Nodemon.",
 
-  "personal-project-whatsapp-llm-summary": "Whatsapp LLM: A personal project started in 2025 that fine-tunes a large language model to emulate a person's WhatsApp chat patterns using their message history.",
+  "personal-project-whatsapp-llm-summary": "WhatsApp LLM: A personal project started in May 2025 that fine-tunes a large language model to emulate a person's WhatsApp chat patterns using their message history. GitHub: https://github.com/alexandtheoh/whatsapp_llm",
 
-  "personal-project-whatsapp-llm-1": "Fine-tuned a Mistral 7B model using 250,000 WhatsApp messages with a custom training template to emulate personal writing style and knowledge.",
+  "personal-project-whatsapp-llm-1": "Fine-tuned a Mistral 7B model using over 250,000 WhatsApp messages with a custom training template to emulate personal writing style and knowledge.",
 
-  "personal-project-whatsapp-llm-2": "Used the Unsloth library and QLoRA for efficient parameter tuning.",
+  "personal-project-whatsapp-llm-2": "Used the Unsloth library and QLoRA (Quantized Low-Rank Adaptation) for efficient parameter-efficient fine-tuning.",
 
-  "personal-project-cafe-order-assistant-summary": "An AI-powered barista agent that parses natural language coffee orders into structured decisions, checks inventory, and responds to customers in a friendly way.",
+  "personal-project-cafe-order-assistant-summary": "Barista Agent: An AI-powered barista agent started in November 2025 that parses natural language coffee orders into structured decisions, checks inventory, and responds to customers in a friendly way. GitHub: https://github.com/alexandtheoh/cafe_order_assistant",
 
-  "personal-project-cafe-order-assistant-1": "A tool based AI agent which utilises the OpenAI api to process natural langange into cafe orders. It is able to handle mutliple orders, charge customers and track",
+  "personal-project-cafe-order-assistant-1": "Built a tool-based AI agent using the OpenAI API to process natural language into structured cafe orders. The agent handles multiple orders, charges customers, and tracks inventory across over 20 menu items.",
 
-  "personal-project-cafe-order-assistant-2": "The agent is placed in a state machine and utilises tool calls to transition to/from states and interact with the user.",
+  "personal-project-cafe-order-assistant-2": "The agent is implemented as a state machine and uses OpenAI tool calls to transition between states and interact with the user across multi-step ordering flows, achieving approximately 99% order accuracy.",
 
-  "personal-project-alex-website-summary": "A personal website to showcase my experiences and projects. It utilises the webLLM library to host a client side LLM.",
+  "personal-project-alex-website-summary": "Personal Website: A personal portfolio website started in December 2025 to showcase experiences and projects, featuring a client-side LLM powered by the WebLLM library. GitHub: https://github.com/alexandtheoh/alexander_oh_website. Live at: https://alexanderohwebsite.vercel.app",
 
-  "personal-project-alex-website-llm-1": "The chatbot utilises a gemma-2-2b-it-q4f16_1-MLC model alongside with a custom rag pipeline to deliver knowledge about me (alexander).",
+  "personal-project-alex-website-llm-1": "The chatbot uses a Gemma-2 2B model (gemma-2-2b-it-q4f16_1-MLC) running entirely client-side, paired with a custom RAG pipeline. The RAG system is implemented fully in TypeScript with locally preprocessed embeddings, using cosine similarity and top-k retrieval over approximately 10,000 indexed chunks for fast, context-aware responses about Alexander.",
 
-  "personal-project-alex-website-llm-2": "The website is built using TypeScript, React, HTML and CSS.",
+  "personal-project-alex-website-llm-2": "The website is built using TypeScript, React, HTML, and CSS.",
 
   "skills-technical": "Technical languages: Go, JavaScript, Python, Java, C, VBA, TypeScript, SQL.",
 
-  "skills-frameworks": "Frameworks and libraries: Node.js, React.js, Pandas, Hertz, Socket.io, Strapi.",
+  "skills-frameworks": "Frameworks and libraries: Node.js, React.js, Pandas, Thrift, Hertz, Kitex, Socket.io, Strapi, PM2, Cronjob, Unsloth.",
 
-  "skills-tools": "Tools: Git, Docker, MQTT, RabbitMQ, Postman, Thrift, PM2, Cronjob.",
+  "skills-tools": "Tools: Git, Docker, MQTT, RabbitMQ, Postman, NumPy, OpenAI API, WebLLM.",
 
   "skills-languages": "Languages: English and Chinese.",
 
-  "interests": "Interests: Tennis, Basketball, Golf, Hiking, and Pokemon Showdown."
+  "interests": "Interests: Tennis, Basketball, Golf, Hiking, and Pokemon Showdown.",
+
+  "experience-timeline": "Alexander's work experience in chronological order: Maritime Port Authority of Singapore (May 2023 – Aug 2023), Oneberry Technologies (May 2024 – Aug 2024), Asian Institute of Digital Finance (Jan 2025 – May 2025), TikTok (June 2025 – Nov 2025), Tetrix in New York (Jan 2026 – Present).",
+
+  "experience-stack-summary": "Alexander has worked across the full stack but leans backend. His backend experience spans Go, Node.js, and Python. He has built systems involving real-time data (MQTT, RabbitMQ, Socket.io), financial data pipelines (Bloomberg, SQL, NumPy), payment processing (TikTok Ads), IoT sensor monitoring (Oneberry), LLM fine-tuning (Mistral 7B, QLoRA), and AI agent development (OpenAI tool calls, state machines). He is currently working on private market financial infrastructure at Tetrix in New York."
 }

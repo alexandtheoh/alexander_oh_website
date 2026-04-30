@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { initLLM, sendPrompt } from "../llm/model"
-import { getTopKRecords } from "../llm/rag"
+import { initLLM, sendPrompt, consolidateConvo } from "../llm/model"
+import { getContextAwareTopKRecords } from "../llm/rag"
 import { loadSystemPrompt } from "../llm/db"
 import '../App.css'
 import ReactMarkdown from "react-markdown";
@@ -72,8 +72,11 @@ export default function ChatbotUI() {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
-    // get top k records
-    const context = await getTopKRecords(input, 8, 0)
+    // context-aware retrieval: embed recent conversation + current query together
+    const context = await getContextAwareTopKRecords(messages, input, 8, 0);
+
+    // consolidate long conversations before adding a new turn
+    const base = messageCount > 0 ? await consolidateConvo([...messages]) : [...messages];
 
     // create user message
     const userMsg: ChatCompletionMessageParam = {
@@ -81,7 +84,7 @@ export default function ChatbotUI() {
       content: input,
     };
 
-    let messagesToSend: ChatCompletionMessageParam[] = [...messages];
+    let messagesToSend: ChatCompletionMessageParam[] = base;
 
     // only add system prompt if first message, combine system and context message as one
     if (messageCount === 0) {
